@@ -10,7 +10,7 @@ const projectsData = [
     title: "Amazon Clone",
     description:
       "A full-stack web application replicating Amazon's core features, including user authentication, dynamic product listings, and secure payment integration.",
-    image: "/Portfolio_1/images/projects/amazon.png",
+    image: "/Portfolio/images/projects/amazon.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
