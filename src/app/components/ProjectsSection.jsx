@@ -20,7 +20,7 @@ const projectsData = [
     title: "AI Chess",
     description:
       "A chess engine using the Minimax algorithm with alpha-beta pruning for optimized move decisions, integrated with a web-based interface.",
-    image: "/Portfolio_1/images/projects/chess.jpg",
+    image: "/Portfolio/images/projects/chess.jpg",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -30,7 +30,7 @@ const projectsData = [
     title: "Performance Dashboard",
     description:
       "A dynamic dashboard providing real-time data analysis with key performance metrics, built using Power BI for visual insights.",
-    image: "/Portfolio_1/images/projects/dashboard.png",
+    image: "/Portfolio/images/projects/dashboard.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -40,7 +40,7 @@ const projectsData = [
     title: "Gorcery Store App",
     description:
       "A mobile application for grocery shopping with user authentication, product catalog, and order management features",
-    image: "/Portfolio_1/images/projects/grocery.png",
+    image: "/Portfolio/images/projects/grocery.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
@@ -50,7 +50,7 @@ const projectsData = [
     title: "Portfolio Website",
     description:
       "A personal portfolio site showcasing projects and experiences, designed to engage visitors and facilitate connections through integrated contact features.",
-    image: "/Portfolio_1/images/projects/portfolio.png",
+    image: "/Portfolio/images/projects/portfolio.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
