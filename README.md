@@ -24,7 +24,6 @@ The following dependencies are used in this project:
 - **Tailwind CSS**: Utility-first CSS framework for styling.
 - **React Icons**: Icons for React applications.
 - **TypeScript**: Type-safe JavaScript for maintaining project structure.
-- **Resend**: Email API for handling form submissions.
 
 
 
