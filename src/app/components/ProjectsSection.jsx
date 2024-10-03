@@ -37,7 +37,7 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Gorcery Store App",
+    title: "Grocery Store App",
     description:
       "A mobile application for grocery shopping with user authentication, product catalog, and order management features",
     image: "/Portfolio/images/projects/grocery.png",
