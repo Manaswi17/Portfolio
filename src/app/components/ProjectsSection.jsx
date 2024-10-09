@@ -55,6 +55,16 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "/",
   },
+  {
+    id: 6,
+    title: "Syllablast Game",
+    description:
+      "Syllablast is a Next.js-based word puzzle game where players swap syllables on a 4x4 grid to form words, utilizing React hooks for state management and Vitest for testing.",
+    image: "/Portfolio/images/projects/Syllablast.jpg",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
 ];
 
 const ProjectsSection = () => {
