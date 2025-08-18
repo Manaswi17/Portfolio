@@ -3,35 +3,7 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
-// Experience data moved into a list
-const experienceList = [
-  {
-    title: "Full Stack Developer – Atlas Copco Group, Pune, India",
-    duration: "Jan 2024 – Jun 2024",
-    description: "Developed a responsive React UI with Plotly.js, integrated Flask APIs, optimized storage using Parquet, implemented CORS, embedded Jupyter Notebooks, and managed state with Redux.",
-  },
-  {
-    title: "Research Intern – ApTSi, MA, USA",
-    duration: "Jan 2023 – Dec 2023",
-    description: "Engineered Angular UIs, optimized API handling with NodeJS and Axios, designed dashboards in Figma, and conducted research on transaction strategies and performance testing.",
-  },
-];
-
 const TAB_DATA = [
-  {
-    title: "Experience",
-    id: "experience",
-    content: (
-      <ul className="list-disc pl-2">
-        {experienceList.map((experience, index) => (
-          <li key={index} className="mb-4">
-            <strong>{experience.title}</strong> ({experience.duration})<br />
-            {/* {experience.description} */}
-          </li>
-        ))}
-      </ul>
-    ),
-  },
   {
     title: "Education",
     id: "education",
@@ -45,7 +17,7 @@ const TAB_DATA = [
       <li>
         <strong>B.Tech in Computer Science</strong>, JNEC, Aurangabad, India
         <br />
-        Jun 2020 - Jul 2024 | GPA: 3.57/4.00
+        Jun 2020 - Jul 2024
       </li>
       </ul>
     ),
@@ -64,7 +36,7 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("experience");
+  const [tab, setTab] = useState("education");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -76,23 +48,13 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/Portfolio/images/about-image.png" width={500} height={500} alt="About Image" />
+        <Image src="/images/about-image.png" width={500} height={500} alt="About Image" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            As a Computer Science graduate student, I specialize in full-stack development and machine learning.
-            I’ve designed and built dynamic web applications and APIs that seamlessly integrate cutting-edge
-            technologies to enhance user experiences. Whether it’s crafting a responsive UI or implementing robust 
-            backend systems, my work is grounded in detail-oriented execution and a drive to solve real-world problems. 
-            I’m eager to apply my expertise to projects that push boundaries and make a difference.
+            I'm a versatile engineer who thrives at the intersection of data, systems, and intelligence. My passion lies in designing robust data pipelines that feed into full-stack applications, then supercharging them with AI - whether it's optimizing ETL workflows, architecting scalable backend services, or embedding machine learning models into production systems. With hands-on experience across the entire development lifecycle, I bridge the gap between raw data and intelligent user experiences. Currently pursuing my Master's at WPI, I'm constantly exploring how to make systems more efficient, adaptive, and impactful through thoughtful engineering.
           </p>
           <div className="flex flex-row justify-start mt-8">
-            <TabButton
-              selectTab={() => handleTabChange("experience")}
-              active={tab === "experience"}
-            >
-              Experience
-            </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}

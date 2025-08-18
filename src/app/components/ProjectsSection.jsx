@@ -7,64 +7,66 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Amazon Clone",
+    title: "Abey!",
     description:
-      "A full-stack web application replicating Amazon's core features, including user authentication, dynamic product listings, and secure payment integration.",
-    image: "/Portfolio/images/projects/amazon.png",
+      "Serverless auction platform (AWS, React.js, PostgreSQL) with real-time bidding and JWT authentication, designed for scalability and security.",
+    image: "/images/projects/abey.jpg",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "AI Chess",
+    title: "BigDocBot",
     description:
-      "A chess engine using the Minimax algorithm with alpha-beta pruning for optimized move decisions, integrated with a web-based interface.",
-    image: "/Portfolio/images/projects/chess.jpg",
+      "LLM-powered code summarization tool using LangChain, CodeBERT, and AST parsing. Generates function-level summaries, complexity scores, and readability metrics for Python/JS.",
+    image: "/images/projects/bigdocbot.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "Performance Dashboard",
+    title: "VizBotz",
     description:
-      "A dynamic dashboard providing real-time data analysis with key performance metrics, built using Power BI for visual insights.",
-    image: "/Portfolio/images/projects/dashboard.png",
+      "AI-driven data visualization assistant (Streamlit) with OpenAI/Gemini APIs and RAG fallback. Converts datasets into Altair/Vega-Lite charts with dynamic natural language queries.",
+    image: "/images/projects/vizbotz.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Grocery Store App",
+    title: "AI Chess",
     description:
-      "A mobile application for grocery shopping with user authentication, product catalog, and order management features",
-    image: "/Portfolio/images/projects/grocery.png",
-    tag: ["All", "Mobile"],
+      "A chess engine using the Minimax algorithm with alpha-beta pruning for optimized move decisions, integrated with a web-based interface.",
+    image: "/images/projects/chess.jpg",
+    tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "Portfolio Website",
+    title: "Performance Dashboard",
     description:
-      "A personal portfolio site showcasing projects and experiences, designed to engage visitors and facilitate connections through integrated contact features.",
-    image: "/Portfolio/images/projects/portfolio.png",
+      "A dynamic dashboard providing real-time data analysis with key performance metrics, built using Power BI for visual insights.",
+    image: "/images/projects/dashboard.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Syllablast Game",
+    title: "Grocery Store App",
     description:
-      "Syllablast is a Next.js-based word puzzle game where players swap syllables on a 4x4 grid to form words, utilizing React hooks for state management and Vitest for testing.",
-    image: "/Portfolio/images/projects/Syllablast.jpg",
-    tag: ["All", "Web"],
+      "A mobile application for grocery shopping with user authentication, product catalog, and order management features",
+    image: "/images/projects/grocery.png",
+    tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
   },
+  
+  
 ];
 
 const ProjectsSection = () => {
