@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
+import basePath from "../utils/basePath";
 
 const projectsData = [
   {
@@ -10,7 +11,7 @@ const projectsData = [
     title: "Abey!",
     description:
       "Serverless auction platform (AWS, React.js, PostgreSQL) with real-time bidding and JWT authentication, designed for scalability and security.",
-    image: "/images/projects/abey.jpg",
+    image: `${basePath}/images/projects/abey.jpg`,
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -20,7 +21,7 @@ const projectsData = [
     title: "BigDocBot",
     description:
       "LLM-powered code summarization tool using LangChain, CodeBERT, and AST parsing. Generates function-level summaries, complexity scores, and readability metrics for Python/JS.",
-    image: "/images/projects/bigdocbot.png",
+    image: `${basePath}/images/projects/bigdocbot.png`,
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -30,7 +31,7 @@ const projectsData = [
     title: "VizBotz",
     description:
       "AI-driven data visualization assistant (Streamlit) with OpenAI/Gemini APIs and RAG fallback. Converts datasets into Altair/Vega-Lite charts with dynamic natural language queries.",
-    image: "/images/projects/vizbotz.png",
+    image: `${basePath}/images/projects/vizbotz.png`,
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -40,7 +41,7 @@ const projectsData = [
     title: "AI Chess",
     description:
       "A chess engine using the Minimax algorithm with alpha-beta pruning for optimized move decisions, integrated with a web-based interface.",
-    image: "/images/projects/chess.jpg",
+    image: `${basePath}/images/projects/chess.jpg`,
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -50,7 +51,7 @@ const projectsData = [
     title: "Performance Dashboard",
     description:
       "A dynamic dashboard providing real-time data analysis with key performance metrics, built using Power BI for visual insights.",
-    image: "/images/projects/dashboard.png",
+    image: `${basePath}/images/projects/dashboard.png`,
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -60,7 +61,7 @@ const projectsData = [
     title: "Grocery Store App",
     description:
       "A mobile application for grocery shopping with user authentication, product catalog, and order management features",
-    image: "/images/projects/grocery.png",
+    image: `${basePath}/images/projects/grocery.png`,
     tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
