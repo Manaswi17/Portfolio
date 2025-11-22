@@ -22,6 +22,13 @@ const EmailSection = () => {
         </p>
         <div className="socials flex flex-row gap-2">
           <Link
+            href="https://github.com/Manaswi17"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src={GithubIcon} alt="Github Icon" />
+          </Link>
+          <Link
             href="https://www.linkedin.com/in/manaswi-kulkarni"
             target="_blank"
             rel="noopener noreferrer"
@@ -33,6 +40,7 @@ const EmailSection = () => {
       <div>
         <h5 className="text-xl font-bold text-white my-4">Get in Touch</h5>
         <p className="text-[#ADB7BE] mb-4">Click below to send me an email directly:</p>
+        {/* Updated email to match your WPI Resume */}
         <a
           href="mailto:kulkarnimanaswi17@gmail.com"
           className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg inline-block"

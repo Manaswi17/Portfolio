@@ -53,7 +53,9 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I&apos;m a versatile engineer who thrives at the intersection of data, systems, and intelligence. My passion lies in designing robust data pipelines that feed into full-stack applications, then supercharging them with AI - whether it&apos;s optimizing ETL workflows, architecting scalable backend services, or embedding machine learning models into production systems. With hands-on experience across the entire development lifecycle, I bridge the gap between raw data and intelligent user experiences. Currently pursuing my Master&apos;s at WPI, I&apos;m constantly exploring how to make systems more efficient, adaptive, and impactful through thoughtful engineering.
+            I&apos;m a versatile engineer who thrives at the intersection of data, systems, and intelligence. My passion lies in designing robust data pipelines that feed into full-stack applications, then supercharging them with AI. With hands-on experience across the entire development lifecycle, I bridge the gap between raw data and intelligent user experiences. 
+            <br /><br />
+            Currently pursuing my Master&apos;s at WPI, I&apos;m constantly exploring how to make systems more efficient. When I’m not coding, you can find me at the university art club, creating sculptures from recycled materials, a practice that keeps my engineering problem-solving creative and resourceful.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

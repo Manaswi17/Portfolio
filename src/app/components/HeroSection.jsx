@@ -22,15 +22,23 @@ const HeroSection = () => {
             </span>
             <br></br>
             <TypeAnimation
-              sequence={["Manaswi!", 1000, "Developer!", 1000]}
+              sequence={[
+                "Manaswi",
+                1000,
+                "an AI Engineer",
+                1000,
+                "a Full Stack Dev",
+                1000,
+                "a Problem Solver",
+                1000,
+              ]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            A solutions-driven innovator, committed to transforming complex
-            problems into seamless, impactful outcomes.
+            Computer Science Master&apos;s student at WPI. I architect scalable cloud systems, optimize ML pipelines, and build intelligent tools that solve real-world problems.
           </p>
           <div>
             {/* <Link

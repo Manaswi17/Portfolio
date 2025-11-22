@@ -4,50 +4,52 @@ import { motion } from "framer-motion";
 
 const experienceData = [
   {
-    title: "Backend Developer",
-    company: "SyncQues (Pre-Launch Startup)",
-    location: "Remote",
-    duration: "June 2025 – Present",
+    title: "Full Stack Developer",
+    company: "Gridify",
+    location: "Boston, MA",
+    duration: "Sept 2025 – Present",
     description: [
-      "Scalable Real-Time Architecture: Engineered a high-performance backend supporting 10K+ concurrent users with sub-100ms latency, leveraging GraphQL and Redis for seamless real-time interactions.",
-      "AI-Powered Automation: Developed an intelligent answer engine using LLMs and asynchronous task processing, handling 500+ requests/minute while maintaining accuracy and speed."
+      "Spearheaded the complete transition from DocuSign to BoldSign by conducting vendor analysis, prototyping solutions, and leading contract negotiations.",
+      "Accelerated developer onboarding by engineering a one-command local stack (Bun + Docker + Supabase) with automated database seeding.",
+      "Established robust QA processes by integrating Playwright for automated E2E testing, significantly reducing production bugs."
     ],
-    technologies: ["GraphQL", "Redis", "LLMs", "MongoDB", "AWS", "Celery"]
+    technologies: ["React", "Supabase", "Docker", "Bun", "Playwright", "Stripe"]
   },
   {
     title: "Machine Learning Engineer",
     company: "NuVant Systems (A3 Global)",
     location: "Boston, MA",
-    duration: "May 2025 – Present",
+    duration: "May 2025 – Aug 2025",
     description: [
-      "Full-Stack Battery Diagnostics: Built an Electron-based platform integrating real-time hardware control (NI-VISA) with ML-driven battery analysis, reducing test cycles from hours to minutes.",
-      "Adaptive Testing Framework: Designed a modular system that auto-configures for 15+ battery types, eliminating manual setup and accelerating R&D validation."
+      "Engineered an ML pipeline that reduced battery analysis time from 3 hours to 2 minutes (99% efficiency gain).",
+      "Developed a real-time hardware monitoring suite using Electron, React, and FastAPI, integrating NI-VISA protocols."
     ],
-    technologies: ["Electron", "NI-VISA", "Machine Learning", "Battery Management", "LabView", "Data Acquisition"]
+    technologies: ["Electron", "FastAPI", "Python", "NI-VISA", "LabVIEW", "React"]
   },
   {
     title: "Full Stack Developer",
-    company: "Atlas Copco",
+    company: "Atlas Copco Group",
     location: "Pune, India",
     duration: "Jan 2024 – June 2024",
     description: [
-      "Real-Time Manufacturing Insights: Created interactive dashboards (React + Plotly.js) to visualize sensor data, improving equipment monitoring and reducing downtime by 20%.",
-      "Optimized Data Processing: Streamlined ETL pipelines using Spark and Parquet, cutting storage costs by 30% while enhancing processing efficiency."
+      "Developed real-time manufacturing dashboards using React and Plotly.js, enabling operators to identify bottlenecks immediately.",
+      "Architected REST APIs backed by a Spark-based ETL pipeline, reducing data storage costs by 30% via Parquet optimization."
     ],
-    technologies: ["React", "Plotly.js", "Spark", "Parquet", "ETL", "Redux"]
+    technologies: ["React", "Flask", "Spark", "Parquet", "Docker", "Jenkins"]
   },
   {
     title: "Research Intern",
-    company: "Applied Technology Solutions",
-    location: "Massachusetts",
-    duration: "Jan 2023 – Dec 2023",
+    company: "Applied Technology Solutions (ApTSi)",
+    location: "Massachusetts (Remote)",
+    duration: "Jan 2022 – Dec 2023",
     description: [
-      "Data Flow Optimization: Redesigned transaction workflows to reduce latency by 5 seconds per task, enhancing system responsiveness for end-users.",
-      "UI-Driven Efficiency: Implemented Angular/Node.js improvements that boosted user engagement by 15% through intuitive data navigation."
+      "Rapidly transitioned from frontend basics to full-stack implementation, developing complete web applications using Angular and Node.js.",
+      "Modernized legacy data flow systems to reduce user interaction time by 5 seconds per task using optimized API calls.",
+      "Engineered transaction processing logic and implemented database optimizations, driving a 20% increase in system efficiency."
     ],
-    technologies: ["Angular", "Node.js", "Workflow Optimization", "UI/UX", "API Design"]
+    technologies: ["Angular", "Node.js", "Axios", "UI/UX", "API Design"]
   }
-]
+];
 
 const ExperienceSection = () => {
   return (

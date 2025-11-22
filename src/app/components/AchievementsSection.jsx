@@ -81,12 +81,35 @@ const AnimatedNumbers = dynamic(
 
 // List of skills for each category
 const skillData = {
-  Languages: ["Python", "JavaScript", "C", "SQL"],
-  "Framework/Libraries": ["React", "Flask", "Angular", "Scikit-learn", "Plotly"],
-  Tools: ["Git","Visual Studio Code", "JIRA", "FIGMA", "PowerBI"],
-  Databases: ["MySQL", "MongoDB", "PostgreSQL", "SQLite", "Oracle"],
+  Languages: [
+    "Python", 
+    "Java", 
+    "TypeScript", 
+    "JavaScript", 
+    "SQL"
+  ],
+  "Framework/Libraries": [
+    "Next.js", 
+    "React", 
+    "Node.js", 
+    "FastAPI", 
+    "LangChain"
+  ],
+  Tools: [
+    "AWS", 
+    "Docker", 
+    "Kubernetes", 
+    "Playwright", 
+    "Git"
+  ],
+  Databases: [
+    "PostgreSQL", 
+    "MongoDB", 
+    "Supabase", 
+    "Redis", 
+    "GraphQL"
+  ],
 };
-
 const achievementsList = [
   {
     metric: "Languages",
