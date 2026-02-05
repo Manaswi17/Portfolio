@@ -42,7 +42,7 @@ const EmailSection = () => {
         <p className="text-[#ADB7BE] mb-4">Click below to send me an email directly:</p>
         {/* Updated email to match your WPI Resume */}
         <a
-          href="mailto:kulkarnimanaswi17@gmail.com"
+          href="mailto:kulkarnimanaswi17@gmail.com?subject=Let's Connect&body=Hi Manaswi,%0A%0AI came across your portfolio and would like to connect with you.%0A%0ABest regards"
           className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg inline-block"
         >
           Send Email

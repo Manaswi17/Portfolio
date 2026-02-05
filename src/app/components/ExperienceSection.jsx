@@ -4,10 +4,22 @@ import { motion } from "framer-motion";
 
 const experienceData = [
   {
+    title: "Research Assistant",
+    company: "Worcester Polytechnic Institute",
+    location: "Worcester, MA",
+    duration: "Jan 2026 – Present",
+    description: [
+      "Developing an interactive GIS visualization dashboard using React and Python to render high-density transit data for urban mobility redesigns.",
+      "Implementing geospatial data processing and graph-based optimization algorithms to simulate real-time route efficiency for city planning stakeholders.",
+      "Collaborating with cross-functional research teams to translate theoretical transit models into scalable, web-based tools for city planning."
+    ],
+    technologies: ["GIS", "D3.js", "Graph-based Optimization", "Leaflet.js"]
+  },
+  {
     title: "Full Stack Developer",
     company: "Gridify",
     location: "Boston, MA",
-    duration: "Sept 2025 – Present",
+    duration: "Sept 2025 – Dec 2025",
     description: [
       "Spearheaded the complete transition from DocuSign to BoldSign by conducting vendor analysis, prototyping solutions, and leading contract negotiations.",
       "Accelerated developer onboarding by engineering a one-command local stack (Bun + Docker + Supabase) with automated database seeding.",
@@ -38,7 +50,7 @@ const experienceData = [
     technologies: ["React", "Flask", "Spark", "Parquet", "Docker", "Jenkins"]
   },
   {
-    title: "Research Intern",
+    title: "Research Development Software Engineer",
     company: "Applied Technology Solutions (ApTSi)",
     location: "Massachusetts (Remote)",
     duration: "Jan 2022 – Dec 2023",

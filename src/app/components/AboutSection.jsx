@@ -1,25 +1,24 @@
 "use client";
-import React, { useTransition, useState } from "react";
-import Image from "next/image";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import TabButton from "./TabButton";
-import basePath from "../utils/basePath";
 
 const TAB_DATA = [
   {
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>
-        <strong>M.S. in Computer Science</strong>, Worcester Polytechnic Institute (WPI), USA
-        <br />
-        Aug 2024 - Aug 2026
-      </li>
-      <li>
-        <strong>B.Tech in Computer Science</strong>, JNEC, Aurangabad, India
-        <br />
-        Jun 2020 - Jul 2024
-      </li>
+      <ul className="space-y-4">
+        <li className="bg-[#181818] p-4 rounded-lg border border-[#33353F]">
+          <strong className="text-primary-400">M.S. in Computer Science</strong>
+          <p className="text-[#ADB7BE] text-sm">Worcester Polytechnic Institute (WPI), USA</p>
+          <p className="text-secondary-500 text-sm">Aug 2024 - Aug 2026</p>
+        </li>
+        <li className="bg-[#181818] p-4 rounded-lg border border-[#33353F]">
+          <strong className="text-primary-400">B.Tech in Computer Science</strong>
+          <p className="text-[#ADB7BE] text-sm">JNEC, Aurangabad, India</p>
+          <p className="text-secondary-500 text-sm">Jun 2020 - Jul 2024</p>
+        </li>
       </ul>
     ),
   },
@@ -27,54 +26,55 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Microsoft Azure DP-900</li>
-        <li>Microsoft Azure AI-900</li>
-        <li>Google Cloud Arcade Badge</li>
-      </ul>
+      <div className="space-y-3">
+        {["Microsoft Azure DP-900", "Microsoft Azure AI-900", "Google Cloud Arcade Badge"].map((cert, idx) => (
+          <div key={idx} className="bg-[#181818] p-3 rounded-lg border border-[#33353F] flex items-center">
+            <span className="text-primary-500 mr-3">✓</span>
+            <span className="text-[#ADB7BE]">{cert}</span>
+          </div>
+        ))}
+      </div>
     ),
   },
 ];
 
 const AboutSection = () => {
   const [tab, setTab] = useState("education");
-  const [isPending, startTransition] = useTransition();
-
-  const handleTabChange = (id) => {
-    startTransition(() => {
-      setTab(id);
-    });
-  };
 
   return (
-    <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src={`${basePath}/images/about-image.png`} width={500} height={500} alt="About Image" />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
-            I&apos;m a versatile engineer who thrives at the intersection of data, systems, and intelligence. My passion lies in designing robust data pipelines that feed into full-stack applications, then supercharging them with AI. With hands-on experience across the entire development lifecycle, I bridge the gap between raw data and intelligent user experiences. 
-            <br /><br />
-            Currently pursuing my Master&apos;s at WPI, I&apos;m constantly exploring how to make systems more efficient. When I’m not coding, you can find me at the university art club, creating sculptures from recycled materials, a practice that keeps my engineering problem-solving creative and resourceful.
-          </p>
-          <div className="flex flex-row justify-start mt-8">
+    <section className="text-white py-8 px-4 sm:py-16 xl:px-16" id="about">
+      <div className="max-w-6xl mx-auto">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="text-center text-4xl font-bold text-white mb-12"
+        >
+          Education & Certifications
+        </motion.h2>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          {TAB_DATA.map((item) => (
             <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
+              key={item.id}
+              selectTab={() => setTab(item.id)}
+              active={tab === item.id}
             >
-              Education
+              {item.title}
             </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              Certifications
-            </TabButton>
-          </div>
-          <div className="mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
-          </div>
+          ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="bg-[#121212] rounded-lg p-8 border border-[#33353F]"
+        >
+          {TAB_DATA.find((t) => t.id === tab).content}
+        </motion.div>
       </div>
     </section>
   );
