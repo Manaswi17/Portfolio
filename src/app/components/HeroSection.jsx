@@ -20,6 +20,23 @@ const HeroSection = () => {
       {/* Mobile Layout - Video on top, text below */}
       <div className="lg:hidden">
         <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center px-4 mb-8"
+        >
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl font-extrabold">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+              Hello,
+            </span>
+            <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+              I&apos;m Manaswi
+            </span>
+          </h1>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -45,15 +62,6 @@ const HeroSection = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-center px-4"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Hello,
-            </span>
-            <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              I&apos;m Manaswi
-            </span>
-          </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6">
             Innovative | Quick-Learner | AI-Driven
           </p>
